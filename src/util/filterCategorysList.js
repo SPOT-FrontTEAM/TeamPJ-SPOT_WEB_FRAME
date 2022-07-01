@@ -1,0 +1,6 @@
+filterCategorysList = [
+  {
+    type: 'University',
+    
+  }
+]

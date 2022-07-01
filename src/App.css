@@ -1,38 +1,199 @@
-.App {
+body {
+  margin: 0px;
+  background-color: white;
+}
+
+/* Test :: MyHeader Banner Footer */
+header .test_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  aspect-ratio: 1920/104;
+  background-size: auto;
+  display: flex;
+}
+.test_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  aspect-ratio: 1920/104;
+  background-size: auto;
+  display: flex;
+}
+.test_header img {
+  aspect-ratio: 1920/104;
+}
+.banner_test {
+  aspect-ratio: 1920/711;
+  margin-bottom: 10px;
+}
+.banner_test img {
+  width: 100%;
+  aspect-ratio: 1920/711;
+}
+.MyFooter {
+  width: 70%;
+  aspect-ratio: 1366/402;
+  margin: auto;
+}
+.MyFooter img {
+  width: 100%;
+  aspect-ratio: 1366/402;
+}
+
+/* SliderBanner */
+.Home_SliderBanner {
+  width: 70%;
+  aspect-ratio: 1366/450;
+  margin: auto;
+  padding: 0px;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Home_SliderBanner .Swiper_Banner {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.Home_SliderBanner .Swiper_Banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Study Board */
+.Study_Board {
+  width: 70%;
+  margin: auto;
+}
+
+/* Home_Filter_Post */
+.Home_Filter_Post {
+  width: 100%;
+}
+.Home_Filter_Post .Home_Filter {
+  aspect-ratio: 1366/90;
+  background-color: #638085;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.Home_Filter_Post .Home_Filter .Home_Filter_Toggle {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+.Home_Filter_Post .Home_Filter .Home_Filter_University {
+  float: left;
+
+  width: 25%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+.Home_Filter_Post .Home_Filter .Home_Filter_Branch {
+  float: left;
+
+  width: 25%;
+  height: 100%;
+
+  text-align: center;
+}
+.Home_Filter_Post .Home_Filter .Home_Filter_Details {
+  float: left;
+
+  width: 25%;
+  height: 100%;
+
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home_Filter_Option */
+.Home_Filter_Option {
+  width: 100%;
+  height: 100%;
+  padding-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Home_Filter_Option .Title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home_Filter_Toggle */
+.Home_Filter_Toggle_Wrapper {
+  width: 100%;
+  height: 100%;
+}
+.Home_Filter_Toggle_Wrapper .Toggle_Btn {
+  float: left;
+  width: 130px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  background-color: gray;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Home_Filter_Toggle_Wrapper .Toggle_Text {
+  float: left;
+  width: 70px;
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.Home_Filter_Toggle .Circle_on {
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+  position: absolute;
+  left: 5%;
+  transition: all 0.5s ease-in-out;
+}
+.Home_Filter_Toggle .Circle_off {
+  background-color: red;
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+  position: absolute;
+  left: 5%;
+  transform: translate(80px, 0);
+  transition: all 0.5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Home_Filter_Post */
+.Home_Filter_Post .Home_Post {
+  margin-top: 10px;
+}
+.Home_Filter_Post .Home_Post .Post_Item {
+  width: 25%;
+  aspect-ratio: 1/1.5;
+  overflow: hidden;
+}
+.Home_Filter_Post .Home_Post .Post_Item .Item_img_Wrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Home_Filter_Post .Home_Post .Post_Item .Item_img_Wrapper img {
+  width: 100%;
+  height: 100%;
 }
