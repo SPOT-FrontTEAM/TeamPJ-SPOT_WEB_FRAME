@@ -1,6 +1,0 @@
-filterCategorysList = [
-  {
-    type: 'University',
-    
-  }
-]
