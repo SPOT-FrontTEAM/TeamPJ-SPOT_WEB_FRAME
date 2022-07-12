@@ -64,7 +64,6 @@ function RegisterPage() {
 
   return (
     <div className="RegisterPage">
-      <NavBar />
       <div className="RegisterPageWrapper">
         <img
           className="signUpLogo"
@@ -106,7 +105,6 @@ function RegisterPage() {
           <button type="submit">Sign Up</button>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }

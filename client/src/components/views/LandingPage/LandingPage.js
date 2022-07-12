@@ -26,7 +26,6 @@ function LandingPage() {
 
   return (
     <div className="LandingPage">
-      <NavBar />
       <div className="LandingPageWrapper">
         <h2>공개채용정보 | 신입</h2>
         {/* <img
@@ -80,7 +79,6 @@ function LandingPage() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <Footer />
     </div>
   );
 }

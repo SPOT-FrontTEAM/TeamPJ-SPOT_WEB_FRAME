@@ -41,7 +41,6 @@ function LoginPage() {
 
   return (
     <div className="LoginPage">
-      <NavBar />
       <div className="loginWrapper">
         <img
           className="signInLogo"
@@ -68,7 +67,6 @@ function LoginPage() {
           </a>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }
