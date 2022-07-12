@@ -34,8 +34,7 @@ code {
 }
 .App {
   margin: auto;
-  background-color: #fff
-  
+  background-color: #fff;
 }
 
 /* Header */
@@ -133,7 +132,6 @@ code {
 .Footer .footerGuide {
   margin-right: 8px;
   display: inline-block;
-
 }
 .Footer .footerDate {
   margin-right: 20px;
@@ -153,7 +151,7 @@ code {
   padding-top: 15px;
 }
 .LandingPage .LandingPageWrapper h2 {
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
   font-size: 25px;
   margin-bottom: 5px;
 }
@@ -190,8 +188,6 @@ code {
   color: #000;
   cursor: pointer;
 }
-
-
 
 /* LoginPage */
 .LoginPage {
@@ -338,6 +334,119 @@ code {
 /* StudyServicePage */
 .StudyServicePage {
   padding-top: 15px;
+}
+.StudyServicePage .StudyService {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nanum Pen Script", cursive;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+.StudyServicePage .StudyService h2 {
+  display: flex;
+  font-size: 25px;
+  vertical-align: middle;
+}
+.StudyServicePage .StudyService button {
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.StudyServicePage .studyOptionList {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: #000 solid 1px;
+
+  margin-bottom: 10px;
+}
+.StudyServicePage .studyOptionList .studyOptionControl {
+  width: 50%;
+}
+.StudyServicePage .studyOptionList .studyOptionControl .ControlMenu {
+  border: none;
+  text-align: center;
+  border-bottom: gray solid 1px;
+  margin-right: 4px;
+  height: 20px;
+}
+.StudyServicePage .studyOptionList .studyOptionSearch {
+  width: 50%;
+}
+.StudyServicePage .studyOptionList .studyOptionSearch input {
+  width: 75%;
+  height: 23px;
+  border: none;
+  border-bottom: gray solid 1px;
+  display: flex;
+  float: right;
+  margin-right: 5px;
+}
+.StudyServicePage .studyOptionList .studyOptionSearch button {
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  float: right;
+  cursor: pointer;
+}
+
+/* StudyServiceItem */
+.StudyServiceItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.StudyServiceItem .type_img_wrapper img {
+  width: 50px;
+  border-radius: 10px;
+
+  display: flex;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.StudyServiceItem .item_title {
+  display: flex;
+  float: left;
+  width: 55%;
+}
+.StudyServiceItem .info_Wrapper {
+  width: 35%;
+  float: right;
+  text-align: right;
+}
+.StudyServiceItem .info_Wrapper .item_date {
+  display: flex;
+  float: right;
+  width: 45%;
+  justify-content: center;
+}
+.StudyServiceItem .info_Wrapper .item_name {
+  display: flex;
+  float: right;
+  width: 55%;
+  justify-content: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: gray solid 2px;
 }
 
 /* Spot */

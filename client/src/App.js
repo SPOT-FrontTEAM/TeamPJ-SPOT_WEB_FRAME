@@ -12,6 +12,7 @@ import MessagePage from "./components/views/MessagePage/MessagePage";
 import MyPage from "./components/views/MyPage/MyPage";
 import NavBar from "./components/views/_NavBar/NavBar";
 import Footer from "./components/views/_Footer/Footer";
+import StudyServiceEditPage from "./components/views/StudyServicePage/StudyServiceEditPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/spot" element={<Spot />} />
             <Route path="/message" element={<MessagePage />} />
             <Route path="/mypage" element={<MyPage />} />
+            <Route path="/edit" element={<StudyServiceEditPage />} />
           </Routes>
         </div>
         <Footer />
