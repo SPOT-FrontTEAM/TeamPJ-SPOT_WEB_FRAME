@@ -153,11 +153,45 @@ code {
   padding-top: 15px;
 }
 .LandingPage .LandingPageWrapper h2 {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 25px;
   margin-bottom: 5px;
 }
 .LandingPage .LandingPageWrapper .sampleBanner {
   width: 100%;
 }
+
+/* LandingPage - swiper */
+.LandingPage .croporateRecruitment {
+  width: 100%;
+  aspect-ratio: 2 / 2.1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.LandingPage .croporateRecruitment .slider .sliderWrapper {
+  position: relative;
+  width: 100%;
+}
+.LandingPage .croporateRecruitment .slider img {
+  width: 100%;
+}
+
+.LandingPage .croporateRecruitment .slider button {
+  position: absolute;
+  bottom: 150px;
+  left: 70px;
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+
 
 /* LoginPage */
 .LoginPage {
