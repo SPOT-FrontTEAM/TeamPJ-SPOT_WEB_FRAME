@@ -69,7 +69,15 @@ code {
   padding-top: 5px;
   background-color: #5dc8cd;
   border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+.Navbar .logo img {
+  width: 100%;
+}
+
 .Navbar .index {
   list-style-type: none;
   display: flex;
@@ -448,6 +456,106 @@ code {
   padding-right: 10px;
   border-right: gray solid 2px;
 }
+/* StudyServiceEditPage */
+.StudyServiceEditPage {
+}
+.StudyServiceEditPage .StudyEditControl {
+  font-family: "Nanum Pen Script", cursive;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.StudyServiceEditPage .StudyEditControl button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  width: 80px;
+  cursor: pointer;
+}
+.StudyServiceEditPage .StudyEditControl .ControlMenu {
+  border: none;
+  border-bottom: #000 solid 1px;
+  margin-right: 5px;
+}
+/* StudyServiceEditPage Title */
+.StudyServiceEditPage .StudyTitleImgWrapper {
+  margin-top: 15px;
+}
+
+.StudyServiceEditPage .StudyTitleImgWrapper button{
+  border: none;
+  border-top: #000 solid 1px;
+  cursor: pointer;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox {
+  width: 100%;
+  aspect-ratio: 1920/400;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox .StudyTitleImg::placeholder {
+  color: #f6f6f6;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_1 {
+  background-image: url("../public/assets/studyTitleList/studyTitle1.png");
+  background-size: cover;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_2 {
+  background-image: url("../public/assets/studyTitleList/studyTitle2.png");
+  background-size: cover;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_3 {
+  background-image: url("../public/assets/studyTitleList/studyTitle3.png");
+  background-size: cover;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImg {
+  font-family: 'Nanum Pen Script', cursive;
+  width: 90%;
+  border: none;
+  border-bottom: #000 solid 4px;
+  background-color: transparent;
+  color: white;
+  font-size: 50px;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_1 .StudyTitleImg {
+  text-align: center;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_2 .StudyTitleImg {
+  color: #000;
+  font-family: 'Jua', sans-serif;
+  text-align: center;
+}
+
+.StudyServiceEditPage .StudyTitleTextInput {
+  font-family: 'Jua', sans-serif;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: #ececec;
+
+}
+.StudyServiceEditPage .StudyTitleContentText textarea{
+  font-family: 'Jua', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 300px;
+  resize: vertical;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding: 20px;
+}
+
+
 
 /* Spot */
 .Spot {

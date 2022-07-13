@@ -1,6 +1,8 @@
 import React from "react";
 import StudyServiceItem from "./Sections/StudyServiceItem";
 import { useNavigate } from "react-router-dom";
+import ControlMenu from "../_Common/ControlMenu";
+
 const typeOptionList = [
   { value: "all", name: "All" },
   { value: "helpwanted", name: "구인" },
@@ -33,21 +35,6 @@ const branchOptionList = [
   { value: "empty", name: "언어" },
 ];
 
-const ControlMenu = ({ value, onChange, optionList }) => {
-  return (
-    <select
-      className="ControlMenu"
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-    >
-      {optionList.map((it, idx) => (
-        <option key={idx} value={it.value}>
-          {it.name}
-        </option>
-      ))}
-    </select>
-  );
-};
 
 const StudyServicePage = () => {
   const navigate = useNavigate(); 

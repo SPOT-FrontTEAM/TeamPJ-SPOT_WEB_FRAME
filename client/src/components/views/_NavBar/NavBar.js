@@ -20,7 +20,7 @@ function NavBar() {
   return (
     <header className="Navbar">
       <div className="logo" onClick={() => navigate("/")}>
-        SPOT
+        <img src = {process.env.PUBLIC_URL + `/assets/SPOTLogo.png`} />
       </div>
       <ul className="index">
         <li onClick={() => navigate("/study")}>스터디 구인 구직</li>
