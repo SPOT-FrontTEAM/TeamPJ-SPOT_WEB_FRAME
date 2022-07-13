@@ -59,17 +59,8 @@ code {
 .Navbar .logo {
   width: 100px;
   height: 32px;
-  font-family: "Pacifico", cursive;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
   margin-right: 40px;
   cursor: pointer;
-  text-align: center;
-  padding-top: 5px;
-  background-color: #5dc8cd;
-  border-radius: 5px;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -486,7 +477,7 @@ code {
   margin-top: 15px;
 }
 
-.StudyServiceEditPage .StudyTitleImgWrapper button{
+.StudyServiceEditPage .StudyTitleImgWrapper button {
   border: none;
   border-top: #000 solid 1px;
   cursor: pointer;
@@ -499,7 +490,10 @@ code {
   flex-direction: row;
   align-items: center;
 }
-.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox .StudyTitleImg::placeholder {
+.StudyServiceEditPage
+  .StudyTitleImgWrapper
+  .StudyTitleImgBox
+  .StudyTitleImg::placeholder {
   color: #f6f6f6;
 }
 .StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_1 {
@@ -515,7 +509,7 @@ code {
   background-size: cover;
 }
 .StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImg {
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
   width: 90%;
   border: none;
   border-bottom: #000 solid 4px;
@@ -528,12 +522,12 @@ code {
 }
 .StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_2 .StudyTitleImg {
   color: #000;
-  font-family: 'Jua', sans-serif;
+  font-family: "Jua", sans-serif;
   text-align: center;
 }
 
 .StudyServiceEditPage .StudyTitleTextInput {
-  font-family: 'Jua', sans-serif;
+  font-family: "Jua", sans-serif;
   width: 100%;
   border: none;
   margin-bottom: 10px;
@@ -541,10 +535,9 @@ code {
   padding-left: 20px;
   border-radius: 5px;
   background-color: #ececec;
-
 }
-.StudyServiceEditPage .StudyTitleContentText textarea{
-  font-family: 'Jua', sans-serif;
+.StudyServiceEditPage .StudyTitleContentText textarea {
+  font-family: "Jua", sans-serif;
   width: 100%;
   box-sizing: border-box;
   min-height: 300px;
@@ -555,9 +548,29 @@ code {
   padding: 20px;
 }
 
-
-
 /* Spot */
 .Spot {
-  padding-top: 15px;
+  margin-top: 40px;
+}
+.Spot .SpotWrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;}
+.Spot .SpotWrapper .leftItem {
+  width: 50%;
+  border-right: #000 solid 1px;
+  padding-right: 20px;
+}
+.Spot .SpotWrapper .rightItem {
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.Spot .SpotWrapper .rightItem h2 {
+  font-size: 18px;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.Spot .SpotWrapper .rightItem img {
+  margin-top: 20px;
+  width: 40%;
 }
