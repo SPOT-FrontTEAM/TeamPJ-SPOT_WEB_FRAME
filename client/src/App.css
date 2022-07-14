@@ -45,7 +45,10 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 10px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
   overflow: hidden;
   font-family: "Nanum Pen Script", cursive;
   margin-bottom: 5px;
@@ -555,7 +558,8 @@ code {
 .Spot .SpotWrapper {
   justify-content: center;
   display: flex;
-  flex-direction: row;}
+  flex-direction: row;
+}
 .Spot .SpotWrapper .leftItem {
   width: 50%;
   border-right: #000 solid 1px;
@@ -568,9 +572,248 @@ code {
 }
 .Spot .SpotWrapper .rightItem h2 {
   font-size: 18px;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
 }
 .Spot .SpotWrapper .rightItem img {
   margin-top: 20px;
   width: 40%;
+}
+
+/* MessagePage */
+.MessagePage {
+  width: 100%;
+}
+.MessagePage .MessageHead {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: #000 solid 1px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nanum Pen Script", cursive;
+  padding-right: 20px;
+}
+.MessagePage .MessageHead h2 {
+  font-size: 25px;
+}
+.MessagePage .MessageHead .MessageControl button {
+  border: none;
+  border-bottom: #000 solid 1px;
+  cursor: pointer;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.MessagePage .MessageHead .MessageControl .controlImportant {
+  border-top-left-radius: 5px;
+  background-color: #f7e781;
+}
+.MessagePage .MessageHead .MessageControl .controlDelete {
+  border-top-right-radius: 5px;
+  background-color: #fc7399;
+}
+
+/* MessageItem */
+.MessagePage .MessageItem {
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.MessagePage .MessageItem .MessageItem_userInfo_wrapper {
+  width: 25%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.MessagePage .MessageItem .MessageItem_userInfo_wrapper .userDirection {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.MessagePage .MessageItem .MessageItem_userInfo_wrapper .userDirection {
+  width: 40px;
+  height: 15px;
+}
+.MessagePage .MessageItem .item_content_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 55%;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.MessagePage .MessageItem .item_content_wrapper .item_newestContent {
+  font-family: "Jua", sans-serif;
+  font-size: 15px;
+  color: gray;
+}
+.MessagePage .MessageItem .item_content_wrapper .item_content_send {
+  width: 20px;
+}
+.MessagePage .MessageItem .item_info_wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+
+.MessagePage .MessageItem .item_info_wrapper .item_important {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+/* messageDetail Page */
+.MessageDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.MessageDetail .MessageDetailLeftWrapper {
+  background-color: #f7e781;
+  width: 30%;
+  height: 600px;
+}
+
+.MessageDetail .MessageDetailRightWrapper {
+  background-color: #ececec;
+  width: 70%;
+  height: 600px;
+  padding: 10px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageInputArea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: #000 solid 1px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageInputArea .MessageInput {
+  width: 80%;
+  height: 80px;
+  border-radius: 10px;
+  resize: none;
+  border: none;
+  margin-right: 10px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageInputArea .MessageSend {
+  width: 17%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-image: url("../public/assets/message/send.png");
+  background-size: 40px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: #5dc8cd;
+}
+
+.MessageDetail .MessageDetailRightWrapper .MessageContentArea {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 470px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageContentWrapper {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.MessageDetail .MessageDetailLeftWrapper {
+  text-align: center;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageInfoArea {
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageInfoArea .MessageIngoAreaLogo {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageInfoArea .MessagefromTo {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl button {
+  font-family: 'Jua', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  color: #ececec;
+  border-radius: 5px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl .MessageControlAdd {
+  background-color: #8db463;
+  margin-top: 90px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl .MessageControlDeclare {
+  background-color: #ef404a;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl .MessageControDelete {
+  background-color: #4eb8b9;
+}
+
+/* MessagePiece */
+.MessagePiece {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-family: 'Jua', sans-serif;
+}
+.MessagePiece .MessagePieceInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-bottom: #000 solid 1px;
+}
+.MessagePiece .MessagePieceInfo_1{
+  background-color: #53b080;
+}
+.MessagePiece .MessagePieceInfo h4 {
+  color: #fff;
+}
+.MessagePiece .MessagePieceInfo_2{
+  background-color: #fc7399;
+}
+
+.MessagePiece .MessagePieceContent {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #FFF;
 }
